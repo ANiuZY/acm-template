@@ -1,8 +1,7 @@
 # acm-template
 ANiu的ACM模板
 
-```
-
+```txt
 数据结构
 
 快速区间操作
