@@ -1,0 +1,8 @@
+ll solve(ll a,ll b,ll p){
+    ll x,y,d;
+    ll g=__gcd(a,p);
+    if(b%g)return -1;//无解
+    b/=g;a/=g;p/=g;
+    ex_gcd(a,p,x,y,d);
+    return b*(x+p)%p;//返回最小解
+}
