@@ -55,6 +55,12 @@ public:
       begin_ ++;
     }
   }
+  void pop_back() {
+    check();
+    if (size_ > 0) {
+      size_ --;
+    }
+  }
   T& operator [] (const int32_t index) {
     return data_[begin_ + index];
   }
